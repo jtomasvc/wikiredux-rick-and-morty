@@ -1,0 +1,146 @@
+img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.box {
+    margin-bottom:2rem;
+    background-color: var(--blanco);
+    border-radius:1rem;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.box-status {
+    position: relative;
+}
+
+.status-alive{
+    position: absolute;
+    padding: .5rem;
+    border-radius: 1rem 0 1rem 0;
+    color: white;
+    font-weight: bold;
+    letter-spacing:.2rem;
+    background-color: var(--alive);
+}
+
+.status-dead{
+    position: absolute;
+    padding: .5rem;
+    border-radius: 1rem 0 1rem 0;
+    color: white;
+    font-weight: bold;
+    letter-spacing:.2rem;
+    background-color: var(--bubble);
+}
+
+.box-details {
+    padding: .5rem;
+}
+
+.icon-box{
+    display:flex;
+}
+
+.icon-box > svg {
+    align-self: center;
+    font-size:2rem;
+    margin-right: 1rem;
+}
+
+/*** HEADER ****/
+h1 {
+    color: var(--title);
+    text-align: center;
+    text-shadow: -1px 0 black, 1px 1px black, -3px 2px black, 0 -1px black;
+    font-size: 4rem;
+    font-family: 'Festive', cursive;
+    margin: 1rem 1rem;
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.form-busqueda {
+    display: flex;
+    width: 100%;
+}
+
+.buscador {
+    flex:33.3%;
+    margin-bottom: 2rem;
+    justify-content: start;
+}
+
+.buscadorOne {
+    flex:33.3%;
+    margin-bottom: 2rem;
+    justify-content: center;
+    display:flex;
+}
+
+.buscadorTwo {
+    flex:33.3%;
+    margin-bottom: 2rem;
+    justify-content: end;
+    display:flex;
+}
+
+@media (max-width: 576px) {
+    .form-busqueda {
+        flex-direction: column;
+    }
+
+    .buscador {
+        justify-content: center;
+        display:flex;
+    }
+
+    .buscadorTwo {
+        justify-content: center;
+        display:flex;
+    }
+}
+
+
+.busqueda {
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 75%;
+}
+
+select {
+    width: 90%;
+    padding: .9rem;
+    border: none;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.btn-search {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--button);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-search:hover {
+    background-color: var(--buttonHover);
+}
