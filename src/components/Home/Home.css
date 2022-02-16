@@ -1,60 +1,3 @@
-img {
-    border-radius: 1rem 1rem 0 0;
-}
-
-.box {
-    margin-bottom:2rem;
-    background-color: var(--blanco);
-    border-radius:1rem;
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    transition: all 0.5s ease-in-out;
-}
-
-.box:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.box-status {
-    position: relative;
-}
-
-.status-alive{
-    position: absolute;
-    padding: .5rem;
-    border-radius: 1rem 0 1rem 0;
-    color: white;
-    font-weight: bold;
-    letter-spacing:.2rem;
-    background-color: var(--alive);
-}
-
-.status-dead{
-    position: absolute;
-    padding: .5rem;
-    border-radius: 1rem 0 1rem 0;
-    color: white;
-    font-weight: bold;
-    letter-spacing:.2rem;
-    background-color: var(--bubble);
-}
-
-.box-details {
-    padding: .5rem;
-}
-
-.icon-box{
-    display:flex;
-}
-
-.icon-box > svg {
-    align-self: center;
-    font-size:2rem;
-    margin-right: 1rem;
-}
-
 /*** HEADER ****/
 h1 {
     color: var(--title);
@@ -118,6 +61,7 @@ h1 {
     border: none;
     border-radius: 1rem;
     width: 75%;
+    text-align: center;
 }
 
 select {
@@ -144,3 +88,84 @@ select {
 .btn-search:hover {
     background-color: var(--buttonHover);
 }
+
+/** BUTTONS **/
+.button {
+    margin-bottom: 2rem;
+}
+
+.buttons {
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 10%;
+    font-size: 1rem;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease-in-out;
+}
+
+.buttons:hover {
+    background-color: #f8f0f0;
+}
+
+/** CARDS **/
+img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.box {
+    margin-bottom:2rem;
+    background-color: var(--blanco);
+    border-radius:1rem;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.box-status {
+    position: relative;
+}
+
+.status-alive{
+    position: absolute;
+    padding: .5rem;
+    border-radius: 1rem 0 1rem 0;
+    color: white;
+    font-weight: bold;
+    letter-spacing:.2rem;
+    background-color: var(--alive);
+}
+
+.status-dead{
+    position: absolute;
+    padding: .5rem;
+    border-radius: 1rem 0 1rem 0;
+    color: white;
+    font-weight: bold;
+    letter-spacing:.2rem;
+    background-color: var(--bubble);
+}
+
+.box-details {
+    padding: .5rem;
+}
+
+.icon-box{
+    display:flex;
+}
+
+.icon-box > svg {
+    align-self: center;
+    font-size:2rem;
+    margin-right: 1rem;
+}
+

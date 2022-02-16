@@ -14,10 +14,12 @@ const Home = () => {
   const [searchInputFront, setSearchInputFront] = useState("")
   const [selectEspecie, setSelectEspecie] = useState("")
   const [selectStatus, setSelectStatus] = useState("")
-  
+  const [nextPage, setNextPage] = useState(1)
+
   const Characters = useSelector(state => state.character.character)
+
   useEffect(() =>{
-    const getCharacters = () => dispatch(getCharacter(searchInputFront, selectEspecie, selectStatus ))
+    const getCharacters = () => dispatch(getCharacter(searchInputFront, selectEspecie, selectStatus, nextPage ))
     getCharacters()
   },[Characters])
 
@@ -46,6 +48,20 @@ const Home = () => {
           </div>
         </form>
       </nav>
+      <div className='contenedor button'>
+        <button
+          onClick={() => setNextPage(nextPage - 1)}
+          className='buttons'
+        >
+          atras
+        </button>
+        <button
+          onClick={() => setNextPage(nextPage + 1)}
+          className='buttons'
+        >
+          siguiente
+        </button>
+      </div>
       <div className='contenedor'>
         {Characters && (
           Characters.map(character => (

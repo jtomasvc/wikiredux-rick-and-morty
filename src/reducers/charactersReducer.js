@@ -1,4 +1,4 @@
-import { GET_CHARACTER, SEARCH_INPUT } from "../types";
+import { GET_CHARACTER, NEXT_PAGE, PREV_PAGE } from "../types";
 
 //Cada reducer tiene su propio state
 const initialState = ({
