@@ -48,7 +48,7 @@ const Home = () => {
           </div>
         </form>
       </nav>
-      <div className='contenedor button'>
+      <div className='contenedor-buttons button'>
         <button
           onClick={() => setNextPage(nextPage - 1)}
           className='buttons'
