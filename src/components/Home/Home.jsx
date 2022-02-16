@@ -92,6 +92,20 @@ const Home = () => {
           ))
         )}
       </div>
+      <div className='contenedor-buttons button'>
+        <button
+          onClick={() => setNextPage(nextPage - 1)}
+          className='buttons'
+        >
+          atras
+        </button>
+        <button
+          onClick={() => setNextPage(nextPage + 1)}
+          className='buttons'
+        >
+          siguiente
+        </button>
+      </div>
     </>
   )
 }
